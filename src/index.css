@@ -1,3 +1,7 @@
+* {
+  margin: 0;
+  padding: 0;
+}
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -7,7 +11,39 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* Header background image */
+header {
+  background-image: url(./images/bg-mobile-light.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  height: 25vh;
+  color: #fff;
+  padding: 0 2.4rem;
+}
+.heading {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 2.4rem;
+}
+.app-title {
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  letter-spacing: .5rem;
+}
+
+/* Todo */
+.todo-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: -4rem;
+}
+.todoInput {
+  padding: .5rem 1rem;
+  border: 1px solid hsla(0, 0%, 59%, .25);
+  border-radius: .5rem;
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, .1);
 }

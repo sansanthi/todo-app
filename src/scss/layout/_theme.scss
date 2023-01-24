@@ -1,0 +1,12 @@
+@use '../abstracts/variables';
+
+main {
+    height: 100vh;
+    background-color: variables.$color-white-1;
+}
+main.dark-theme {
+    background: variables.$color-black;
+}
+.theme-change {
+    cursor: pointer;
+}

@@ -1,0 +1,21 @@
+@use '../abstracts/variables';
+
+body {
+    margin: 0;
+    font-family: variables.$font-family;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 1rem;
+    background-color: variables.$color-white-1;
+    color: variables.$color-gray;
+  }
+
+  h1 {
+    color: variables.$color-white;
+    font-size: 2.8rem;
+    font-weight: 700;
+
+    @media screen and (min-width: 768px) {
+     font-size: 3.2rem;
+    }
+  }

@@ -1,0 +1,33 @@
+@use '../abstracts/variables';
+button {
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+.btn-delete {
+    border-color: transparent;
+    background: transparent;
+    cursor: pointer;
+}
+
+.btn-status {
+    font-family: inherit;
+    font-size: 1.4rem;
+    border: none;
+    margin-left: 1.5rem;
+    text-transform: capitalize;
+}
+.status-type .btn-status {
+    font-weight: 600;
+}
+.btn-status:hover {
+    color: variables.$color-primay-2;
+}
+.active {
+    color: variables.$color-primary-1;
+}
+.dark-theme .btn-status {
+    color: variables.$color-black-3;
+}
+.dark-theme .btn-status:hover {
+    color: variables.$color-white-3;
+}
